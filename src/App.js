@@ -9,8 +9,16 @@ import Signup from "./components/Signup";
 const Appstate = createContext();
 
 function App() {
-  const [login, setLogin] = useState(false);
-  const [userName, setUserName] = useState("");
+  const [login, setLogin] = useState(() =>
+    localStorage.getItem("login") === "true"
+  );
+  const [userName, setUserName] = useState(
+    () => localStorage.getItem("userName") || ""
+  );
+  useEffect(() => {
+    localStorage.setItem("login", login);
+    localStorage.setItem("userName", userName);
+  }, [login, userName]);
 
   return (
     <Appstate.Provider value={{ login, userName, setLogin, setUserName }}>

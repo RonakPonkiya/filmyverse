@@ -14,9 +14,20 @@ const Login = () => {
     mobile: "",
     password: ""
   });
+  
   const [loading, setLoading] = useState(false);
 
   const login = async () => {
+
+    if (form.mobile.trim() === "") {
+    swal({
+      title: "Please enter mobile number",
+      icon: "warning",
+      buttons: false,
+      timer: 2000
+    });
+    return;
+  }
     setLoading(true);
     try {
       const quer = query(usersRef, where('mobile', '==', form.mobile))
@@ -28,6 +39,10 @@ const Login = () => {
         if(isUser) {
           useAppstate.setLogin(true);
           useAppstate.setUserName(_data.name);
+
+            localStorage.setItem("login", "true");
+  localStorage.setItem("userName", _data.name);
+  
           swal({
             title: "Logged In",
             icon: "success",
