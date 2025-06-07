@@ -116,7 +116,7 @@ const AddMovie = () => {
                     <option value="Bollywood">Bollywood</option>
                     <option value="Hollywood">Hollywood</option>
                     <option value="Gujarati">Gujarati</option>
-                    <option value="South">Other</option>
+                    <option value="South">South</option>
                   </select>
                 </div>
               </div>
