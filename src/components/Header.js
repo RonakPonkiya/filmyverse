@@ -24,10 +24,8 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 z-10 header text-3xl flex items-center justify-between text-red-500 font-bold p-3 px-8 border-b-2 border-gray-500">
-      <Link to={"/"}>
-        {" "}
-        <span>
+    <div className="sticky top-0 z-10 header  text-sm md:text-3xl flex items-center justify-between text-red-500 font-bold p-3 px-8 border-b-2 border-gray-500">
+      <Link to={"/"}>        <span>
           Filmy <span className="text-white">Verse</span>
         </span>
       </Link>
@@ -38,7 +36,7 @@ const Header = () => {
             <h1 className="text-lg cursor-pointer bg-gray-700 rounded-md text-white flex items-center">
               <Button>
                 <AddIcon className="mr-1 text-white" />
-                <span className="text-white font-bold text-xl">Add New</span>
+                <span className="text-white font-bold text-xs sm:inline-block md:text-xl ">Add New</span>
               </Button>
             </h1>
           </Link>
