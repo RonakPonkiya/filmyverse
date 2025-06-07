@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 z-10 header  text-xl md:text-3xl flex items-center justify-between text-red-500 font-bold p-3 md:px-8 border-b-2 border-gray-500">
+    <div className="sticky top-0 z-10 header  text-2xl md:text-3xl flex items-center justify-between text-red-500 font-bold p-3 md:px-8 border-b-2 border-gray-500">
       <Link to={"/"}>        <span>
           Filmy <span className="text-white">Verse</span>
         </span>
