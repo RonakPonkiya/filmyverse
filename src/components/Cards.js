@@ -57,7 +57,7 @@ const Cards = () => {
       </form>
       <div className="flex flex-wrap justify-between px-3 mt-4 gap-2 grid grid-cols-2 sm:flex">
         {loading ? (
-          <div className="w-full flex justify-center items-center min-h-screen">
+          <div className="w-full flex justify-center items-center h-96">
             <ThreeDots height={40} color="white" />
           </div>
         ) : filteredData.length === 0 ? (
