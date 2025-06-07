@@ -58,8 +58,8 @@ const AddMovie = () => {
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-8 mx-auto">
           <div className="flex flex-col text-center w-full mb-4">
-            <h1 className="sm:text-3xl text-3xl font-medium title-font mb-4 text-gray-500">
-              ADD MOVIE
+            <h1 className="sm:text-3xl text-3xl font-medium title-font mb-4 text-gray-200">
+              MOVIE DETAIL
             </h1>
           </div>
         </div>
