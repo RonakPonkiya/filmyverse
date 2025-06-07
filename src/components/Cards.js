@@ -75,7 +75,7 @@ const Cards = () => {
             <Link to={`/detail/${e.id}`} key={i}>
               <div className="card font-bold shadow-xl p-2 hover:-translate-y-3 cursor-pointer mt-6 transition-all duration-500">
                 <img
-                  className="h-40 w-full md:h-72"
+                  className="h-40 w-full md:h-72 sm:object-cover"
                   src={e.image}
                   alt={e.title}
                 />
