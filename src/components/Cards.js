@@ -50,7 +50,7 @@ const Cards = () => {
         <option value="South">South</option>
       </select>
 
-      <div className="w-full flex justify-center mt-4">
+      <div className="w-full flex justify-center mt-4 ">
         <input
           type="text"
           placeholder="Search movie title..."
@@ -61,7 +61,7 @@ const Cards = () => {
       </div>
       </div>
 
-      <div className="flex flex-wrap justify-between px-3 gap-2 grid grid-cols-2 sm:flex">
+      <div className="flex flex-wrap justify-start px-3 md:gap-5 md:ml-12 grid grid-cols-2 sm:flex">
         {loading ? (
           <div className="w-full inset-0 col-span-2 flex justify-center items-center h-96">
             <ThreeDots height={40} color="white" />
