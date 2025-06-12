@@ -61,7 +61,7 @@ const Cards = () => {
       </div>
       </div>
 
-      <div className="flex flex-wrap justify-start px-3 md:gap-5 md:ml-12 grid grid-cols-2 sm:flex">
+      <div className="flex flex-wrap justify-start px-3 gap-1 md:gap-7 md:ml-12 grid grid-cols-2 sm:flex">
         {loading ? (
           <div className="w-full inset-0 col-span-2 flex justify-center items-center h-96">
             <ThreeDots height={40} color="white" />
@@ -75,7 +75,7 @@ const Cards = () => {
             <Link to={`/detail/${e.id}`} key={i}>
               <div className="card font-bold shadow-xl p-2 hover:-translate-y-3 cursor-pointer mt-6 transition-all duration-500">
                 <img
-                  className="h-40 w-full md:h-72 sm:object-cover"
+                  className="h-40 w-40 md:w-48 md:h-72 sm:object-cover"
                   src={e.image}
                   alt={e.title}
                 />
