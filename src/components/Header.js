@@ -33,7 +33,7 @@ const Header = () => {
       {useAppstate.login ? (
         <div className="flex items-center  md:gap-4">
           <Link to={"/addmovie"}>
-            <h1 className="text-lg cursor-pointer bg-gray-700 rounded-md text-white flex items-center">
+            <h1 className="text-lg cursor-pointer rounded-md text-white flex items-center">
               <Button>
                 {/* <AddIcon className="mr-1 text-white" /> */}
                 <span className="text-white font-bold text-sm sm:inline-block md:text-xl ">Add New</span>

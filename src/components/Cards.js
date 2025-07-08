@@ -41,7 +41,7 @@ const Cards = () => {
       <select
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
-        className="p-2 rounded-md border mt-4 border-gray-400 m-2 text-gray-700"
+        className="p-2 rounded-md border mt-4 border-gray-400 m-2 text-gray-700 bg-gray-200"
       >
         <option value="All">All</option>
         <option value="Bollywood">Bollywood</option>
@@ -56,7 +56,7 @@ const Cards = () => {
           placeholder="Search movie title..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-[90%] md:w-1/2 p-2 h-11 rounded-md border border-gray-400 focus:outline-none focus:border-red-500 text-gray-700"
+          className="w-[90%] md:w-1/2 p-2 h-11 rounded-md border-2 bg-gray-200 border-gray-400 focus:outline-none focus:border-blue-400 text-gray-700"
         />
       </div>
       </div>
